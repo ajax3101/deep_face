@@ -1,6 +1,6 @@
 {
-    "verified": true,
-    "distance": 0.31900516632306586,
+    "verified": false,
+    "distance": 0.44070575406269674,
     "threshold": 0.4,
     "model": "VGG-Face",
     "detector_backend": "opencv",
