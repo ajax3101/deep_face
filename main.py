@@ -11,7 +11,7 @@ def face_verify(img_1, img_2):
 
 
 def main():
-    face_verify(img_1='faces/mask1.jpg', img_2='faces/mask2.jpg')
+   print(face_verify(img_1='faces/mask1.jpg', img_2='faces/mask2.jpg'))
 
 
 if __name__ == '__main__':
