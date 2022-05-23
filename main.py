@@ -32,7 +32,7 @@ def face_recogn():
 def face_analyse():
     try:
         result_dict = DeepFace.analyze(
-            img_path='faces/mask1.jpg', actions=['emotion', 'age', 'gender', 'race'])
+            img_path='faces/bezos2.jpg', actions=['emotion', 'age', 'gender', 'race'])
 
         with open('face_analyse.json', 'w') as file:
             json.dump(result_dict, file, indent=4, ensure_ascii=False)
@@ -46,8 +46,7 @@ def face_analyse():
 
         for k, v in result_dict.get('emotion').items():
             print(f'{k} - {round(v, 2)}%')
-            
-        
+
     except Exception as ex:
         return ex
 
@@ -55,8 +54,9 @@ def face_analyse():
 def main():
     #print(face_verify(img_1='faces/mask1.jpg', img_2='faces/bezos_mask.jpg'))
     # print(face_recogn())
-    #print(face_analyse())
+    # print(face_analyse())
     face_analyse()
+
 
 if __name__ == '__main__':
     main()
